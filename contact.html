@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us form</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="banner-text">
+    <!--Section heading-->
+    <h2>Contact us</h2>
+    <!--Section description-->
+    <p class="banner-text">Do you have any questions? Please do not hesitate to contact us
+        directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+    </div>
+    <div class = "wrapper">
+        <div class= "contact-form">
+            <div class = "input-fields">
+                <input type="text" class="input" placeholder="Name" required>
+                <input type="email" class="input" placeholder="Email Address" required>
+                <input type="text" class="input" placeholder="Phone" required>
+                <input type="text" class="input" placeholder="Subject" required>
+            </div>
+            <form class="msg">
+                <textarea placeholder="Message"></textarea>
+                <button type="Submit" class="btn">Send</button>
+            </form>
+        </div>
+    </div>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">LogIn</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="home.html#testimonial">Testimonials</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+    
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="images/menu.jpeg" id="Menu">
+    </div>
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var Menu = document.getElementById("Menu")
+    
+        sidenav.style.right="-250px"
+    
+        menubtn.onclick=function (){
+            if (sidenav.style.right === "-250px"){
+                sidenav.style.right = "0";
+                Menu.src = "images/close.jpeg";
+            }
+            else{
+                sidenav.style.right = "-250px";
+                Menu.src = "images/menu.jpeg";
+            }
+        }
+    </script>    
+</body>
+</html>

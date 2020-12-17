@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pricing</title>
+     <link rel="stylesheet" href="pr.css">
+    <meta name="viewport" content="width = device-width, initial-scale=1">
+</head>
+<body>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Sign In</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="home.html#testimonial">Testimonials</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+    
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="images/menu.jpeg" id="Menu">
+    </div>
+    
+<h1 id="title">New 7-Day free trials to help you find the right fit</h1>
+<h2 id="titles">Billed monthly thereafter, cancel anytime.
+Free trial for new subscribers only.</h2>
+<div class="hover-table-layout">
+    <div class="listing-item">
+        <figure class="image">
+          <img src="images/p6.jpeg">
+
+            <figcaption>
+              <div class="caption">
+                <h1>Starter</h1>
+                <h3>One-off hiring needs</h3>
+                <h2>$199/mo</h2>
+                </div>
+            </figcaption>
+        </figure>
+        <div class="listing">
+            <h4>Active jobs - 1</h4>
+            <p>Unlimited applications</p>
+            <h4>Resume views - 50</h4>
+            <p>Unlimited searches</p>
+            <a href="login.html" class="button">START FREE TRAIL</a>
+        </div>
+    </div>
+    <div class="listing-item">
+        <figure class="image">
+            <img src="images/q6.jpeg">
+           <figcaption>
+               <div class="caption">
+                <h1>Standard</h1>
+                 <h3>For small expanding teams</h3>
+                <h2>$399/mo</h2>
+                </div>
+            </figcaption>
+        </figure>
+        <div class="listing">
+            <h4>Active jobs - 3</h4>
+            <p>Unlimited applications</p>
+          <h4>Performance Boost</h4>
+          <p>Faster applies</p>
+            <h4>Resume views - 150</h4>
+            <p>Unlimited searches</p>
+            <a href="login.html" class="button">START FREE TRAIL</a>
+        </div>
+    </div>
+    <div class="listing-item">
+        <figure class="image">
+            <img src="images/q5.jpeg">
+           <figcaption>
+               <div class="caption">
+               <h1>Premium</h1>
+                 <h3>For rapidly growing teams</h3>
+               <h2>$599/mo</h2>
+               </div>
+            </figcaption>
+        </figure>
+        <div class="listing">
+            <h4>Active jobs</h4>
+            <p>Unlimited applications</p>
+          <h4>Performance Boost</h4>
+          <p>Faster applies</p>
+          <h4>Dedicated API(Skill-set)</h4>
+          <p>Hassle free presets for Skills</p>
+            <h4>Resume views - 350</h4>
+            <p>Unlimited searches</p>
+            <a href="login.html" class="button">START FREE TRAIL</a>
+        </div>
+    </div>
+</div>
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var sidenav = document.getElementById("sidenav")
+    var Menu = document.getElementById("Menu")
+
+    sidenav.style.right="-250px"
+
+    menubtn.onclick=function (){
+        if (sidenav.style.right === "-250px"){
+            sidenav.style.right = "0";
+            Menu.src = "images/close.jpeg";
+        }
+        else{
+            sidenav.style.right = "-250px";
+            Menu.src = "images/menu.jpeg";
+        }
+    }
+</script>
+</body>
+</html>

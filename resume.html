@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Monster</title>
+    <link rel="stylesheet" href="resume.css">
+<!--    <style type="text/css">-->
+
+<!--    </style>-->
+</head>
+<body>
+    <div class="form"><h1>Power Resume Search</h1>
+    <button class="one" type="Submit"> Add Resumes </button></div>
+    <div class="main">
+    <form action="result.html" method="GET">
+        <div id="name">
+                <h2 class="name">Job Title : </h2>
+<!--            <label class="titlelabel">Job Title : </label>-->
+            <input class="titlename" type="text" name="">
+        </div>
+        <div>
+            <h2 class="namey">Years of experience : </h2>
+<!--            <label class="years">Years of experience : </label>-->
+            <input class="years" type="number" name="">
+        </div>
+        <div>
+            <h2 class="name">Location : </h2>
+<!--            <label class="location">Location : </label>-->
+            <input class="location" type="address" name="">
+<!--            <label class="location">within</label>-->
+            <h2 class="namex">within </h2>
+            <select class="location">
+                <option>5 miles</option>
+                <option>10 miles</option>
+                <option>20 miles</option>
+                <option>30 miles</option>
+                <option>40 miles</option>
+                <option>50 miles</option>
+                <option>75 miles</option>
+                <option>100 miles</option>
+            </select>
+        </div>
+        <div>
+            <h2 class="name">Skills/Keywords</h2>
+<!--            <label class="skills">Skills/Keywords : </label>-->
+            <input class="skills" type="text" name="">
+            <input class="skills" type="text" name="">
+            <input class="skills" type="text" name="">
+        </div>
+        <div>
+            <h2 class="name">Resume_Updated</h2>
+<!--            <label class="update">Resume Updated : </label>-->
+            <select class="option">
+                <option>Today</option>
+                <option>within 1 day</option>
+                <option>within 2 day</option>
+                <option>within 3 day</option>
+                <option>within 1 month</option>
+                <option>within 3 months</option>
+                <option>within 6 months</option>
+                <option>within 9 months</option>
+                <option>within 12 months</option>
+                <option>All Resume</option>
+            </select>
+        </div>
+        <button class="two" type="Submit"> Search </button>
+        <button class="three" type="Reset">Reset</button>
+        <button class="four" type="Submit">Advance Search</button>
+    </form>
+</div>
+
+<div id="sidenav">
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#feature">Features</a></li>
+            <li><a href="home.html#service">Services</a></li>
+            <li><a href="home.html#testimonial">Testimonials</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+</div>
+<div id="menubtn">
+    <img src="images/menu.jpeg" id="Menu">
+</div>
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var sidenav = document.getElementById("sidenav")
+    var Menu = document.getElementById("Menu")
+
+    sidenav.style.right="-250px"
+
+    menubtn.onclick=function (){
+        if (sidenav.style.right === "-250px"){
+            sidenav.style.right = "0";
+            Menu.src = "images/close.jpeg";
+        }
+        else{
+            sidenav.style.right = "-250px";
+            Menu.src = "images/menu.jpeg";
+        }
+    }
+
+// <!--    All animations will take exactly 500ms-->
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+</script>
+</body>
+</html>

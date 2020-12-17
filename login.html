@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Login And Registration Form</title>
+    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width = device-width, initial-scale=1">
+</head>
+<body>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="pricing.html">Pricings</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="home.html#testimonial">Testimonials</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+    
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="images/menu.jpeg" id="Menu">
+    </div>
+
+    <div class="hero">
+        <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <div class="social-icons">
+            <img src="images/fb.jfif">
+            <img src="images/tw.png">
+            <img src="images/lin.png">
+        </div>
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="password" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="password" class="input-field" placeholder="Enter Password" required>
+            <input type="password" class="input-field" placeholder="Confirm Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+    
+    <script>
+        var menubtn = document.getElementById("menubtn")
+    var sidenav = document.getElementById("sidenav")
+    var Menu = document.getElementById("Menu")
+
+    sidenav.style.right="-250px"
+
+    menubtn.onclick=function (){
+        if (sidenav.style.right === "-250px"){
+            sidenav.style.right = "0";
+            Menu.src = "images/close.jpeg";
+        }
+        else{
+            sidenav.style.right = "-250px";
+            Menu.src = "images/menu.jpeg";
+        }
+    }
+
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+
+</body>
+</html>

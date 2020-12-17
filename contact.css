@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: url('images/q7.jpeg')  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+   
+}
+.banner-text{
+    text-align: center;
+    color: aliceblue ;
+    padding-top: 10px;
+}
+.banner-text h2{
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+}
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+}
+.wrapper{
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+} 
+
+.contact-form{
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px;
+    
+}
+
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+
+}
+
+
+.input-fields,
+.msg{
+    width: 48%;
+
+}
+
+
+
+.input-fields .input,
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border-bottom: 2px solid #c5ecfd;
+    border: 0;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+}
+
+
+
+.msg textarea{
+    height: 212px;
+}
+
+::-webkit-input-placeholder{
+    color: #c5ecfd;
+}
+
+button{
+    width: 200px;
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:600px){
+    .contact-form{
+        flex-direction: column;
+    }
+    .msg-textarea{
+        height: 80px;
+    }
+    .input-fields,
+    .msg{
+        width: 100%;
+    }
+}
+#sidenav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: #009688;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style:none ;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+#menubtn{
+    width: 50px;
+    height: 50px;
+    background: aliceblue;
+    text-align:center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img{
+    width: 20px;
+    margin: 15px;
+} 
