@@ -1,0 +1,125 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Resusort</title>
+    <link rel="stylesheet" href="static/content/resume.css">
+<!--    <style type="text/css">-->
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <!-- Bootstrap -->
+    <link href="../Documents/Unnamed Site 2/css/bootstrap-4.0.0.css" rel="stylesheet">
+
+<!--    </style>-->
+</head>
+<body class="transition-fade">
+    <script src="../Documents/Unnamed Site 2/js/jquery-3.2.1.min.js"></script>
+    <script src="../Documents/Unnamed Site 2/js/popper.min.js"></script>
+    <script src="../Documents/Unnamed Site 2/js/bootstrap-4.0.0.js"></script>
+    <div class="form">
+        <h1>Welcome {{a}}</h1>
+        <a href="ui"><button class="one" type="Submit"> Add Resumes </button></a>
+    </div>
+    <div class="main">
+        <form action="#" method="post">
+            <div id="name">
+                <h2 class="name">Job Title : </h2>
+                <!--            <label class="titlelabel">Job Title : </label>-->
+                <input class="titlename" type="text" name="">
+            </div>
+            <div>
+                <h2 class="namey">Years of experience : </h2>
+                <!--            <label class="years">Years of experience : </label>-->
+                <input class="years" type="number" name="">
+            </div>
+            <div>
+                <h2 class="name">Location : </h2>
+                <!--            <label class="location">Location : </label>-->
+                <input class="location" type="address" name="">
+                <!--            <label class="location">within</label>-->
+                <h2 class="namex">within </h2>
+                <select class="location">
+                    <option>5 miles</option>
+                    <option>10 miles</option>
+                    <option>20 miles</option>
+                    <option>30 miles</option>
+                    <option>40 miles</option>
+                    <option>50 miles</option>
+                    <option>75 miles</option>
+                    <option>100 miles</option>
+                </select>
+            </div>
+            <div>
+                <h2 class="name">Skills/Keywords</h2>
+                <!--            <label class="skills">Skills/Keywords : </label>-->
+                <input class="skills" type="text" name="skill">
+
+            </div>
+            <div>
+                <h2 class="name">Resume_Updated</h2>
+                <!--            <label class="update">Resume Updated : </label>-->
+                <select class="option">
+                    <option>Today</option>
+                    <option>within 1 day</option>
+                    <option>within 2 day</option>
+                    <option>within 3 day</option>
+                    <option>within 1 month</option>
+                    <option>within 3 months</option>
+                    <option>within 6 months</option>
+                    <option>within 9 months</option>
+                    <option>within 12 months</option>
+                    <option>All Resume</option>
+                </select>
+            </div>
+            <button class="two" type="Submit"> Search </button>
+            <button class="three" type="Reset">Reset</button>
+            <button class="four" type="Submit">Advance Search</button>
+        </form>
+    </div>
+
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html#feature">Features</a></li>
+                <li><a href="home.html#service">Services</a></li>
+                <li><a href="home.html#testimonial">Testimonials</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="static/images/menu.jpeg" id="Menu">
+    </div>
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var Menu = document.getElementById("Menu")
+
+        sidenav.style.right = "-250px"
+
+        menubtn.onclick = function () {
+            if (sidenav.style.right === "-250px") {
+                sidenav.style.right = "0";
+                Menu.src = "static/images/close.jpeg";
+            }
+            else {
+                sidenav.style.right = "-250px";
+                Menu.src = "static/images/menu.jpeg";
+            }
+        }
+
+        // <!--    All animations will take exactly 500ms-->
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 500,
+            speedAsDuration: true
+        });
+    </script>
+
+</body>
+</html>

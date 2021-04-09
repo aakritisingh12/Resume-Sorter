@@ -1,0 +1,318 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+          "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Monster</title>
+    <style type="text/css">
+        * {
+            margin: 0 padding:0
+        }
+
+        body {
+            background-image: url(static/Images/photo.jpg);
+            background-position: center;
+            background-size: cover;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            margin-top: 40px;
+        }
+
+        .menu-bar {
+            background: #fff;
+            text-align: left;
+        }
+
+            .menu-bar ul {
+                display: inline-flex;
+                list-style: none;
+                color: #000000;
+            }
+
+                .menu-bar ul li {
+                    width: 120px;
+                    margin: 0px;
+                    padding: 15px;
+                }
+
+                    .menu-bar ul li a {
+                        text-decoration: none;
+                        color: #000000;
+                    }
+
+                    .active, .menu-bar ul li: hover {
+                        background: #2bab0d;
+                        border-radius: 3px;
+                    }
+
+        .sub-menu-1 {
+            display: none;
+        }
+
+        .menu-bar ul li: hover .sub-menu-1 {
+            display: block;
+            position: absolute;
+            background: #fff;
+            margin-top: 15px;
+            margin-left: -15px;
+        }
+
+            .menu-bar ul li: hover .sub-menu-1 ul {
+                display: block;
+                margin: 10px;
+            }
+
+                .menu-bar ul li: hover .sub-menu-1 ul li {
+                    width: 150px;
+                    padding: 10px;
+                    border-bottom: 1px dotted #000000;
+                    background: transparent;
+                    border-radius: 0;
+                    text-align: left;
+                }
+
+                    .menu-bar ul li: hover .sub-menu-1 ul li: last-child {
+                        border-bottom: none;
+                    }
+
+                    .menu-bar ul li: hover .sub-menu-1 ul li a:hover {
+                        color: #b2ff00;
+                    }
+
+        .form {
+            width: 800px;
+            background-color: rgb(0,0,0,0.6);
+            margin: 10;
+            color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .main {
+            background-color: rgb(0,0,0,0.5);
+            width: 800px;
+            margin: 10;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        #name {
+            width: 100%;
+            height: 20px;
+        }
+
+        .name {
+            margin-left: 25px;
+            margin-top: 30px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .titlename {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 30px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+        <!-- .titlelabel { -->
+            <!-- position: relative; -->
+            <!-- color: #E5E5E5; -->
+            <!-- text-transform: capitalize; -->
+            <!-- font-size: 14px; -->
+            <!-- left: 203px; -->
+            <!-- top: -45px; -->
+            <!--
+        }
+        -->
+        .years {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 30px;
+            width: 255px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .location {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 30px;
+            width: 200px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .skills {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 30px;
+            width: 340px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .option {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 30px;
+            width: 200px;
+            height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+            outline: none;
+            overflow: hidden;
+        }
+
+            .option option {
+                font-size: 20px;
+            }
+
+        button {
+            background-color: #3BAF9F;
+            display: block;
+            margin: 20px 0px 0px 20px;
+            text-align: center;
+            border-radius: 12px;
+            border: 2px solid #366473;
+            padding: 14px 110px;
+            outline: none;
+            color: white;
+            cursor: pointer;
+            transition: 0.25px;
+        }
+
+            button:hover {
+                background-color: #5390F5;
+            }
+    </style>
+</head>
+<body>
+  
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="#">Post a Job</a></li>
+            <li><a href="#">Find Candidates</a></li>
+            <li>
+                <a href="#">Solutions</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Small Business</a></li>
+                        <li><a href="#">Mid-Market</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                        <li><a href="#">Staffing</a></li>
+                        <li><a href="#">Government</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Products</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Job Advertising</a></li>
+                        <li><a href="#">Resume search</a></li>
+                        <li><a href="#">Employer Branding</a></li>
+                        <li><a href="#">Full Service Sourcing</a></li>
+                        <li><a href="#">HR Software & Services</a></li>
+                        <li><a href="#">Featured Products</a></li>
+                        <li><a href="#">All Products</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">Pricing</a>
+            </li>
+            <li>
+                <a href="#">Resources</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Employer Resources</a></li>
+                        <li><a href="#">Recruiting Strategies</a></li>
+                        <li><a href="#">Job Description Template</a></li>
+                        <li><a href="#">Work Management & Planning</a></li>
+                        <li><a href="#">Monster Training</a></li>
+                        <li><a href="#">Small Business Hiring</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="form"><h1>Power Resume Search</h1></div>
+    <div class="main">
+        <form action="#" method="Post" >
+            <div id="name">
+                <h2 class="name">Job Title : </h2>
+                <!--            <label class="titlelabel">Job Title : </label>-->
+                <input class="titlename" type="text" name="">
+            </div>
+            <div>
+                <h2 class="name">Years of experience : </h2>
+                <!--            <label class="years">Years of experience : </label>-->
+                <input class="years" type="number" name="">
+            </div>
+            <div>
+                <h2 class="name">Location : </h2>
+                <!--            <label class="location">Location : </label>-->
+                <input class="location" type="address" name="">
+                <!--            <label class="location">within</label>-->
+                <h2 class="name">within </h2>
+                <select class="location">
+                    <option>5 miles</option>
+                    <option>10 miles</option>
+                    <option>20 miles</option>
+                    <option>30 miles</option>
+                    <option>40 miles</option>
+                    <option>50 miles</option>
+                    <option>75 miles</option>
+                    <option>100 miles</option>
+                </select>
+            </div>
+            <div>
+                <h2 class="name">Skills/Keywords</h2>
+                <!--            <label class="skills">Skills/Keywords : </label>-->
+                <input class="skills" type="text" name="skill">
+         
+            </div>
+            <div>
+                <h2 class="name">Resume_Updated</h2>
+                <!--            <label class="update">Resume Updated : </label>-->
+                <select class="option">
+                    <option>Today</option>
+                    <option>within 1 day</option>
+                    <option>within 2 day</option>
+                    <option>within 3 day</option>
+                    <option>within 1 month</option>
+                    <option>within 3 months</option>
+                    <option>within 6 months</option>
+                    <option>within 9 months</option>
+                    <option>within 12 months</option>
+                    <option>All Resume</option>
+                </select>
+            </div>
+            <button type="Submit"> Search </button>
+            <button type="Reset">Reset</button>
+            <button type="Submit">Advance Search</button>
+        </form>
+    </div>
+
+</body>
+</html>
