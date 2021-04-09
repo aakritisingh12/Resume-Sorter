@@ -1,0 +1,36 @@
+body {
+  margin: 0px;
+}
+
+.navbar-brand {
+  font-family: "Fjalla One", sans-serif !important;
+  font-weight: 200 !important;
+  font-size: 25px !important;
+  padding: 5px;
+  margin-left: 5px !important;
+}
+
+.form-control {
+  margin: 20px;
+}
+
+.urname {
+  margin-left: 20px;
+}
+
+.uremail {
+  margin-left: 20px;
+}
+
+.sub {
+  margin-left: 20px;
+}
+
+.msg {
+  margin-left: 20px;
+}
+
+.btn {
+  margin-left: 600px;
+  color: #009688;
+}
